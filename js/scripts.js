@@ -1,12 +1,18 @@
+var translate= function(word) {
+  if (!word) {
+    return alert("enter a word");
+  }
+
+}
+
 $(document).ready(function() {
   $("form#input").submit(function(event) {
     event.preventDefault();
 
-    var word=  $("#translate").val();
+    var word=  $("input#translate").val();
     var result= translate(word);
 
-    var translate= function(word) {
-      
-    }
+
+    $("#output").text(result);
   });
 });
