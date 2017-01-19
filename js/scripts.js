@@ -15,13 +15,22 @@ var firstVowel = function(word) {
   return vowels.includes(firstLetter);
 };
 
+var moveConsonant = function(word) {
+  // use unshift and push methods to move a consonant to back of string
+};
+
+var addAY = function(word) {
+  // add ay to end of word
+  return word + "ay";
+};
+
 var translateWord = function(word) {
   // check for input
   if (word.length === 0) {
     alert("You must enter a word");
   }
   if (firstVowel(word)) {
-    alert("the first letter is a vowel");
+    return addAY(word);
   }
 
 };
